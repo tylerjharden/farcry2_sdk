@@ -1,0 +1,5 @@
+X:\Theta Technologies, LLC\FC2Shell\FC2Shell\obj\Debug\ResolveAssemblyReference.cache
+X:\Theta Technologies, LLC\FC2Shell\FC2Shell\bin\Debug\FC2Shell.dll
+X:\Theta Technologies, LLC\FC2Shell\FC2Shell\bin\Debug\FC2Shell.pdb
+X:\Theta Technologies, LLC\FC2Shell\FC2Shell\obj\Debug\FC2Shell.dll
+X:\Theta Technologies, LLC\FC2Shell\FC2Shell\obj\Debug\FC2Shell.pdb

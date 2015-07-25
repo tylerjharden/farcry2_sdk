@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ECF919F-F020-4C63-98FD-84DE1A436305}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FC2Shell</RootNamespace>
+    <AssemblyName>FC2Shell</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dunia\AABB.cs" />
+    <Compile Include="Dunia\Axis.cs" />
+    <Compile Include="Dunia\AxisType.cs" />
+    <Compile Include="Dunia\Binding.cs" />
+    <Compile Include="Dunia\Camera.cs" />
+    <Compile Include="Dunia\CoordinateSystem.cs" />
+    <Compile Include="Dunia\Editor.cs" />
+    <Compile Include="Dunia\EditorDocument.cs" />
+    <Compile Include="Dunia\EditorObject.cs" />
+    <Compile Include="Dunia\EditorObjectPivot.cs" />
+    <Compile Include="Dunia\EditorObjectSelection.cs" />
+    <Compile Include="Dunia\EditorSettings.cs" />
+    <Compile Include="Dunia\Engine.cs" />
+    <Compile Include="Dunia\GameModes.cs" />
+    <Compile Include="Dunia\Gizmo.cs" />
+    <Compile Include="Dunia\IInputSink.cs" />
+    <Compile Include="Dunia\Inventory.cs" />
+    <Compile Include="Dunia\Localizer.cs" />
+    <Compile Include="Dunia\ObjectInventory.cs" />
+    <Compile Include="Dunia\PaintBrush.cs" />
+    <Compile Include="Dunia\PhysEntityVector.cs" />
+    <Compile Include="Dunia\Pivot.cs" />
+    <Compile Include="Dunia\Plane.cs" />
+    <Compile Include="Dunia\Points.cs" />
+    <Compile Include="Dunia\Render.cs" />
+    <Compile Include="Dunia\RotationDirection.cs" />
+    <Compile Include="Dunia\Snapshot.cs" />
+    <Compile Include="Dunia\Spline.cs" />
+    <Compile Include="Dunia\SplineController.cs" />
+    <Compile Include="Dunia\Vec2.cs" />
+    <Compile Include="Dunia\Vec3.cs" />
+    <Compile Include="Helper\MathHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ViewportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
